@@ -1,6 +1,6 @@
 defmodule ElixirPokedex do
   def show do
-    pokemons = "charmander bulbasur squirtle"
+    pokemons = "charmander bulbasaur squirtle"
 
     pokemons
     |> String.split(" ")
