@@ -5,6 +5,7 @@ defmodule ElixirPokedex do
     pokemons
     |> String.split(" ")
     |> Enum.map(fn pokemon -> add_stat(pokemon) end)
+    |> Enum.map(&evolve(&1))
   end
 
   def add_stat("charmander" = pokemon) do
