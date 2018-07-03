@@ -1,18 +1,8 @@
 defmodule ElixirPokedex do
-  @moduledoc """
-  Documentation for ElixirPokedex.
-  """
+  def show do
+    pokemons = "charmander bulbasur squirtle"
 
-  @doc """
-  Hello world.
-
-  ## Examples
-
-      iex> ElixirPokedex.hello
-      :world
-
-  """
-  def hello do
-    :world
+    pokemons
+    |> String.split(" ")
   end
 end
